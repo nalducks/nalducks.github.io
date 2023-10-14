@@ -20,7 +20,7 @@ main{
    position: fixed;
    display: flex;
    width: 100vw;
-   margin: 0auto;
+   margin: 0;
    opacity: 95%;
    align-items: center;
    height: 1.5vh;
