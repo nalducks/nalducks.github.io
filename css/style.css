@@ -458,7 +458,7 @@ figcaption {
 .work-experience-text span {
     font-family: mono type;
     font-weight: bold;
-    color: #000000;
+    color: #000;
     text-align: center;
     align-self: stretch;
     display: flex;
