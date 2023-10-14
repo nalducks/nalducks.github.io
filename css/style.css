@@ -740,10 +740,10 @@ footer{
 /*- - - - - EXPERIENCE - - - - - */
 
 .experience {
-    width: 80%;
+    width: 75%;
 }
 .work-experience-text{
-    line-height: 1.8rem;
+    line-height: 1.5rem;
 }
 
 .work-experience-text span {
