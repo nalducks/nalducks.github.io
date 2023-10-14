@@ -166,7 +166,7 @@ main{
 @keyframes moveUpDown {
     0%, 100% {
         transform: translateY(2px);
-        color: #1780db;
+        color: #1280db;
     }
     50% {
         transform: translateY(0);
@@ -452,7 +452,7 @@ figcaption {
     position: absolute;
     left: 42%;
     top: 15%;
-    line-height: 2.3rem;
+    line-height: 2rem;
 }
 
 .work-experience-text span {
@@ -648,7 +648,7 @@ footer{
 
 .navbar{
    width: 100%;
-   padding: 1%;
+   padding: 0;
 }
 .menu {
     padding-right: 5%;
