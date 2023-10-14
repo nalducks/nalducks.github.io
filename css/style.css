@@ -1,0 +1,1111 @@
+body{
+    margin: 0 auto;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+main{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.section{
+    background-color: #edf2fb;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+   background-color: #edf2fb;
+   position: fixed;
+   display: flex;
+   width:100vw;
+   margin: 0 auto;
+   opacity: 95%;
+   align-items: center;
+   height: 1vh;
+   padding: 1rem;
+   z-index: 1;
+   justify-content: space-between;
+   border: 1.5px solid #e2e2e2;
+   transform: translateY(-100%);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding-right: 12rem;
+}
+.menu-button {
+    display: none;
+}
+.menu li {
+    display: inline;
+    transition:color 0.8s ease;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    margin:1rem;
+    display: flex; 
+    font-family: Helvetica;
+    color:#000000;
+    font-size: 0.9rem;
+    font-weight:bold;
+}
+
+.menu a:hover,
+.menu a.active,
+.menuDropdown a:hover,
+.menuDropdown a.active {
+    color: #1980db;
+    transition: color 0.2s; 
+}
+
+.btn { 
+  color: #333;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-top: -4px;
+}
+
+.menuDropdown { 
+    display: none;
+    text-align: center;
+    padding-left: 0;
+    list-style: none;
+    position: absolute;
+    left: -1px;
+    top: -17px;
+    width: 100vw;
+    height: 110vh;
+   background-color: #edf2fb;
+   padding-top: 25%;
+   line-height: 3rem;
+}
+
+.menuDropdown a {
+    display: blok;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Helvetica;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.menuDropdown.show {
+    display: block;
+   animation: fadeInDropdown 0.3s forwards;
+}
+.menuDropdown.close {
+    animation: fadeOutDropdown 0.3s forwards;
+}
+
+.logo{
+    font-family: Helvetica;
+    color: #000000;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 9rem;
+}
+
+@keyframes fadeInA {
+    0% {
+        opacity: 0;
+        transform: translate(-27%, -42%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-13%, -42%);
+    }}
+@keyframes fadeInB {
+    0% {
+        opacity: 0;
+        transform: translate(-120%, -42%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-13%, -42%);
+    }}
+
+@keyframes fadeInC {
+    0% {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }}
+
+@keyframes fadeInDropdown { 
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }}
+
+@keyframes fadeOutDropdown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(2px);
+        color: #999;
+    }
+    50% {
+        transform: translateY(0);
+        color: #555;
+    }
+}
+/*- - - - - ABOUT - - - - - */
+
+.about-text{
+    background-color: #edf2fb;
+    position: absolute;
+    left: 23%;
+    top: 44%;
+    animation: fadeInA 2s forwards;
+}
+
+.about-text p{
+    width:35vw;
+    line-height: 0;
+    margin: 3rem 0rem 1rem;
+}
+.about-text p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 2rem;
+}
+ 
+.about-text p:nth-child(2){
+    font-family: calibri;
+    font-weight: bold;
+    color: #1c1c1c;
+    font-size: 5rem;
+}
+ 
+.about-text p:nth-child(3){
+    font-family: myriad pro regular;
+    color: #403e3e;
+    font-size: 2.2rem;
+    line-height: 1;
+    animation: moveUpDown 2s infinite;
+}
+ 
+.about-text p:nth-child(4),
+.about-text p:nth-child(5){
+    font-family: calibri;
+    color: #403e3e;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.2rem;
+}
+
+.button {
+  border-radius: 0.8rem;
+  background-color: #1980db;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.8rem;
+  width: 30%;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2rem;
+  transition: 0.3s;
+}
+
+.button:hover span {
+  padding-right: 1.5rem;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.social-icons{
+    display: left;
+    background-color: #edf2fb;
+    position: absolute;
+    left: 10%;
+    top: 46%;
+    animation: fadeInB 2s forwards;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color:#000000;
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e2e2;
+    margin: 1rem;
+    border-radius:50%;
+}
+ 
+.social-icons i,.social i{
+    color:#000000;
+}
+ 
+.social-icons a:hover{
+    color:#ffffff;
+    background-color: #1980db;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    transition:all ease 0.3s;
+}
+ 
+.social-icons a:hover i,
+.social a:hover i{
+    color:#FFFFFF;
+    transition:all ease 0.3s;
+}
+
+.image-about {
+    background-color:#edf2fb;
+    height: auto;
+    width: 33%;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    animation: fadeInC 2s forwards;
+}
+
+/*- - - - - EDUCATION - - - - - */
+
+.education-text{
+    background-color: #edf2fb;
+    position: absolute;
+    left: 55%;
+    top: 20%;
+}
+
+.education-text p{
+    width:40vw;
+    margin: 5rem 0rem 5rem;
+}
+
+.education-text p:nth-child(1){
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 4rem;
+    margin:0;
+    margin-bottom: 6rem;
+}
+ 
+.education-text p:nth-child(2){
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 0;
+    color: #1a1a1a;
+    font-size: 3rem;
+    margin:0;
+}
+ 
+.education-text p:nth-child(3){
+    font-family: calibri;
+    color: #403e3e;
+    font-size: 1.5rem;
+    margin:0;
+}
+ 
+.education-text p:nth-child(4){
+    font-family: calibri;
+    color: #403e3e;
+    font-size: 1rem;
+    margin:0;
+}
+
+.image-education{
+    background-color:#edf2fb;
+    height: 70vh;
+    position: absolute;
+    bottom: 8rem;
+    left: 10%;
+
+}
+
+
+/*- - - - - SKILL - - - - - */
+
+.skill-text{
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 3rem;
+    position: absolute;
+    margin-top: 1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} 
+figure {
+    text-align: center; 
+    margin: 1rem;
+}
+figure img {
+    cursor: pointer;
+    height: auto;
+    max-width: 60%;
+    transition: transform 0.1s ease;
+}
+figure img:hover {
+    transform: scale(1.2);
+}
+figcaption {
+    font-size: 0.8rem;
+    color: #333;
+}
+.hardSkillsContainer {
+    height: 50vh;
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    left: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1px solid #aaa;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.3);
+}
+.softSkillsContainer {
+    height: 50vh;
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    right: 10rem;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    border: 0.1px solid #aaa;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.3);
+}
+.hardSkillsContainer p,
+.softSkillsContainer p {
+    position: absolute;
+    width: 100%;
+    color: #333;
+    font-weight: bold;
+    margin-top: -5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/*- - - - - EXPERIENCE - - - - - */
+
+.experience {
+    font-family: calibri;
+    color: #403e3e;
+    font-size: 1rem;
+    width: 40vw;
+    margin: 0;
+}
+.experience li{
+     line-height: 1;
+     padding: 0;
+     margin: 0;
+}
+
+.work-experience-text{
+    display: inline;
+    position: absolute;
+    left: 42%;
+    top: 15%;
+    line-height: 2.3rem;
+}
+
+.work-experience-text span {
+    font-family: mono type;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+ .experience1-text{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    width: 50vw;
+}
+ .experience2-text{
+    position: absolute;
+    left: 50%;
+    top: 46%;
+    width: 50vw;
+}
+ .experience3-text{
+    position: absolute;
+    left: 50%;
+    top: 68%;
+    width: 50vw;
+}
+
+.experience1-text p,
+.experience2-text p, 
+.experience3-text p{
+    line-height: 0.8rem;
+    margin: 0.5rem;
+    margin-top:0.5rem;
+    margin-left:0;
+
+}
+
+.experience1-text p:nth-child(1), 
+.experience2-text p:nth-child(1), 
+.experience3-text p:nth-child(1){
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 2rem;
+}
+ 
+.experience1-text p:nth-child(2), 
+.experience2-text p:nth-child(2), 
+.experience3-text p:nth-child(2){
+    font-family: calibri;
+    color: #1a1a1a;
+    font-size: 1.5rem;
+    margin:0;
+}
+ 
+.experience1-text p:nth-child(3),
+.experience2-text p:nth-child(3),
+.experience3-text p:nth-child(3){
+    font-family: calibri;
+    color: #403e3e;
+    font-size: 1rem;
+}
+ 
+.image-experience{
+    background-color:#edf2fb;
+    height: 70vh;
+    position: absolute;
+    bottom: 15%;
+    left: 12%;
+}
+
+
+/*- - - - - CERTIFICATE - - - - - */
+
+.certificate-text{
+    top: 5%;
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    font-weight: bold;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica;
+}
+.image-slider {
+  display: flex;
+
+}
+.imageCertificate {
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    transition: opacity 1s;
+    opacity: 0;
+    display: flex;
+    top: 20%;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-100%);
+}
+.imageCertificate img{
+    height: 60vh;
+    width: 50%;
+    position: absolute;
+    border-radius: 0.5rem;
+    border: 1px solid #aaa;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.6);
+}
+.imageCertificate a {
+    color: #333;
+    top: 110%;
+    font-size: 1.5rem;
+    position: absolute;
+}
+.imageCertificate.visible {
+   opacity: 1;
+   transform: translate(0);
+}
+.slideButton {
+    position: absolute;
+    display: flex;
+    top: 20%;
+    height: 60vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.slideButton a {
+    cursor: pointer;
+    font-size: 3rem;
+    margin: 27rem;
+    color: #333;
+}
+.slideButton a:hover {
+    color: #1980db;
+}
+
+footer{
+    height: 10vh;
+    display: flex;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color:#111;
+    font-size: 1rem;
+}
+
+.button-up{
+    display: flex;    
+    width: 2vw;
+    height: 4vh;
+    right: 2rem;
+    color: #666;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    text-decoration: none;
+    border: 2px solid #e2e2e2;
+    background-color: #transparent;
+    transition: background-color 0.3s ease;
+}
+
+.button-up:hover {
+    color: #333;
+    transition: all ease 0.3s;
+    background-color: #e2e2e2;
+}
+
+
+
+
+
+/*-----SISTEM RESPONSIVE-----*/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+
+.navbar{
+   width: 100%;
+   height: 1.5%;
+   padding: 1%;
+}
+.menu {
+    padding-right: 5%;
+}
+.menu a {
+    margin: 0.5rem;
+    font-size: 70%;
+}
+.logo{
+    font-size: 100%;
+    padding-left: 10%;
+}
+
+/*- - - - - ABOUT - - - - - */
+
+.about-text{
+    left: 22%;
+}
+
+.about-text p:nth-child(1){
+    font-size: 1.8rem;
+}
+ 
+.about-text p:nth-child(2){
+    font-size: 3.5rem;
+}
+ 
+.about-text p:nth-child(3){
+    font-size: 2rem;
+}
+ 
+.about-text p:nth-child(4),
+.about-text p:nth-child(5){
+    font-size: 1rem;
+}
+
+.button {
+  width: 50%;
+}
+.social-icons{
+    left: 8%;
+    top: 46%;
+}
+
+.social-icons a{
+    height: 7vh;
+}
+
+.image-about{
+    height: auto;
+    width: 27rem;
+    top: 18%;
+}
+
+/*- - - - - EDUCATION - - - - - */
+
+
+.education-text p:nth-child(1){
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+ 
+.education-text p:nth-child(2){
+    font-size: 2.5rem;
+}
+
+.image-education{
+    height: 65vh;
+}
+
+
+/*- - - - - SKILL - - - - - */
+
+.hardSkillsContainer {
+    height: 55vh;
+    width: 40%;
+    left: 5rem;
+}
+.softSkillsContainer {
+    height: 55vh;
+    width: 40%;
+    right: 5rem;
+}
+.hardSkillsContainer p,
+.softSkillsContainer p {
+    margin-top: -4rem;
+}
+
+/*- - - - - EXPERIENCE - - - - - */
+
+.experience {
+    width: 85%;
+}
+.work-experience-text{
+    line-height: 2rem;
+}
+
+.work-experience-text span {
+    font-size: 2.5rem;
+}
+ .experience1-text{
+    top: 8%;
+}
+ .experience2-text{
+    top: 43%;
+}
+ .experience3-text{
+    top: 69%;
+}
+
+.experience1-text p:nth-child(1), 
+.experience2-text p:nth-child(1), 
+.experience3-text p:nth-child(1){
+    font-size: 1.8rem;
+}
+ 
+.experience1-text p:nth-child(2), 
+.experience2-text p:nth-child(2), 
+.experience3-text p:nth-child(2){
+    font-size: 1.4rem;
+}
+ 
+.experience1-text p:nth-child(3),
+.experience2-text p:nth-child(3),
+.experience3-text p:nth-child(3){
+    font-size: 1rem;
+}
+.image-experience{
+    background-color:#edf2fb;
+    height: 70vh;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+}
+/*- - - - - CERTIFICATE - - - - - */
+
+.imageCertificate {
+    height: 80%;
+    width: 100%;
+    top: 15%;
+}
+.imageCertificate img {
+    height: 80%;
+    width: 60%;
+}
+.imageCertificate a {
+    top: 95%;
+}
+
+.slideButton {
+    top: 22%;
+}
+.slideButton a {
+    margin: 40%;
+}
+
+.button-up {
+    width: 3.3vw;
+    height: 50%;
+}}
+
+
+/* ........................................ */
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+
+.navbar {
+   width: 100%;
+   height: 3%;
+   padding: 1%;
+}
+.menu {
+   display: none;
+}
+.menu-button {
+   display: block;
+}
+.menu-button:focus + #dropdown {
+   display: block;
+}
+.logo {
+    font-size: 0.7rem;
+    padding-left: 5%;
+}
+@keyframes fadeInA {
+    0% {
+        opacity: 0;
+        transform: translate(-30%, -42%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-13%, -42%);
+    }}
+@keyframes fadeInB {
+    0% {
+        opacity: 0;
+        transform: translate(-13%, 80%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-13%, -42%);
+    }}
+@keyframes fadeInC {
+    0% {
+        opacity: 0;
+        transform: translateX(40%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }}
+
+/*- - - - - ABOUT - - - - - */
+
+.about-text {
+    left: 21%;
+    top: 60%;
+}
+.about-text p {
+    width: 100%;
+    line-height: 0;
+    margin: 1rem 0rem 1.2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.about-text p:nth-child(1) {
+    font-size: 0.8rem;
+}
+.about-text p:nth-child(2) {
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+}
+.about-text p:nth-child(3) {
+    font-size: 1.5rem;
+}
+.about-text p:nth-child(4),
+.about-text p:nth-child(5) {
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+.button {
+  font-size: 1rem;
+  padding: -5rem;
+  width: 45vw;
+margin-left: 21%;
+}
+
+.social-icons {
+    display: flex;
+    left: 13%;
+    top: 85%;
+    width: 100%;
+    justify-content: center;
+}
+.social-icons a {
+    width: 2rem;
+    height: 2rem;
+    margin: 3%;
+}
+ 
+.image-about {
+    height: auto;
+    width: 70vw;
+    top: 5%;
+    left: 10%;
+    margin: auto;
+}
+
+
+/*- - - - - EDUCATION - - - - - */
+
+ .education-text {
+    left: 10%;
+    width:80%;
+    top: 15%;
+}
+
+.education-text p {
+    width:100%;
+}
+
+.education-text p:nth-child(1) {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10%;
+}
+ 
+.education-text p:nth-child(2) {
+    font-size: 2rem;
+    margin:0;
+}
+ 
+.education-text p:nth-child(3) {
+    font-size: 1.4rem;
+    margin:0;
+}
+ 
+.education-text p:nth-child(4) {
+    font-size: 1rem;
+    margin:0;
+}
+
+/*- - - - - SKILL - - - - - */
+
+.skill-text {
+    left: 10%;
+    width: 80%;
+    font-size: 2.2rem;
+    top: 0%;
+} 
+
+figure {
+    margin: auto;
+}
+figure img {
+    max-width: 50%;
+}
+figcaption {
+    font-size: 0.5rem;
+}
+.hardSkillsContainer {
+    height: 35%;
+    width: 80%;
+    top: 18%;
+    left: 10%;
+}
+.softSkillsContainer {
+    height: 35%;
+    width: 80%;
+    top: 60%;
+    left: 10%;
+}
+.hardSkillsContainer p,
+.softSkillsContainer p {
+    margin-top: -2rem;
+    font-size: 1rem;
+}
+/*- - - - - EXPERIENCE - - - - - */
+
+.experience {
+    width: 90%;
+    margin-left: 6%;
+    padding-left: 0;
+}
+.experience li {
+     font-size: 0.8rem;
+}
+.work-experience-text {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    left: 10%;
+    top: 5%;
+}
+.work-experience-text span {
+    font-size: 25px;
+}
+ .experience1-text {
+    left: 10%;
+    top: 12%;
+    width: 80%;
+}
+ .experience2-text {
+    left: 10%;
+    top: 50%;
+    width: 80%;
+}
+ .experience3-text {
+    left: 10%;
+    top: 78%;
+    width: 80%;
+}
+
+.experience1-text p,
+.experience2-text p, 
+.experience3-text p {
+    line-height: 10px;
+    margin: 2%;
+    margin-top: 1%;
+    margin-left: 0;
+}
+
+.experience1-text p:nth-child(1), 
+.experience2-text p:nth-child(1), 
+.experience3-text p:nth-child(1) {
+    font-size: 20px;
+}
+ 
+.experience1-text p:nth-child(2), 
+.experience2-text p:nth-child(2), 
+.experience3-text p:nth-child(2) {
+    font-size: 18px;
+}
+ 
+.experience1-text p:nth-child(3),
+.experience2-text p:nth-child(3),
+.experience3-text p:nth-child(3) {
+    font-size: 14px;
+     line-height: 1;
+}
+ 
+.image-education,
+.image-experience {
+    display: none;
+}
+
+
+/*- - - - - CERTIFICATE - - - - - */
+
+.certificate-text {
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    font-size: 1.8rem;
+}
+.imageCertificate {
+    height: 40vh;
+    top: 25%;
+}
+.imageCertificate img {
+    height: 28vh;
+    width: 42vh;
+}
+.imageCertificate a {
+    top: 100%;
+    font-size: 1rem;
+}
+.slideButton {
+    top: 36.5%;
+    left: 10%;
+    width: 80%;
+}
+.slideButton a {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+footer {
+    left: 10%;
+    width: 80%;
+    height: 60px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    left: 10%;
+    width: 80%;
+    font-size: 10px;
+}
+
+.button-up {
+    width: 20px;
+    height: 20px;
+    right: -5%;
+    bottom: 50%;
+    font-size: 10px;
+}}
