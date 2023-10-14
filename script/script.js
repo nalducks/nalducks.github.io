@@ -19,7 +19,7 @@ function getCurrentSection() {
     let currentSection = null;
     sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <=100 && rect.bottom >= 100) {
+        if (rect.top <=50 && rect.bottom >= 50) {
             currentSection = section;
         }
     });
@@ -65,14 +65,12 @@ function slide(direction) {
 }
 
 
-
+// Fungsi Button Dropdown
 function showDropdown() {
     var dropdown = document.getElementById("dropdown");
     dropdown.classList.add("show");
     dropdown.classList.remove("close");
-
 }
-
 function closeDropdown() {
     var dropdown = document.getElementById("dropdown");
     dropdown.classList.add("close");
