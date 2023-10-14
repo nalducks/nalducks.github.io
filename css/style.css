@@ -83,9 +83,9 @@ main{
     top: -17px;
     width: 100vw;
     height: 110vh;
-   background-color: #edf2fb;
-   padding-top: 25%;
-   line-height: 3rem;
+    background-color: #edf2fb;
+    padding-top: 25%;
+    line-height: 3rem;
 }
 
 .menuDropdown a {
@@ -99,7 +99,7 @@ main{
 
 .menuDropdown.show {
     display: block;
-   animation: fadeInDropdown 0.3s forwards;
+    animation: fadeInDropdown 0.3s forwards;
 }
 .menuDropdown.close {
     animation: fadeOutDropdown 0.3s forwards;
@@ -173,6 +173,7 @@ main{
         color: #555;
     }
 }
+
 /*- - - - - ABOUT - - - - - */
 
 .about-text{
@@ -546,7 +547,7 @@ figcaption {
     font-family: Helvetica;
 }
 .image-slider {
-  display: flex;
+    display: flex;
 
 }
 .imageCertificate {
