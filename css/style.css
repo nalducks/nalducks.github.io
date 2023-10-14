@@ -41,7 +41,7 @@ main{
 }
 .menu li {
     display: inline;
-    transition:color 0.8s ease;
+    transition: color 0.8s ease;
 }
 
 .menu li:last-child {
@@ -50,7 +50,7 @@ main{
 
 .menu a {
     text-decoration: none;
-    margin:1rem;
+    margin: 1rem;
     display: flex; 
     font-family: Helvetica;
     color: #333;
@@ -166,7 +166,7 @@ main{
 @keyframes moveUpDown {
     0%, 100% {
         transform: translateY(2px);
-        color: #999;
+        color: #1780db;
     }
     50% {
         transform: translateY(0);
