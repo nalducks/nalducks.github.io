@@ -19,8 +19,8 @@ main{
    background-color: #edf2fb;
    position: fixed;
    display: flex;
-   width:100vw;
-   margin: 0 auto;
+   width: 100vw;
+   margin: 0auto;
    opacity: 95%;
    align-items: center;
    height: 1.5vh;
@@ -53,7 +53,7 @@ main{
     margin:1rem;
     display: flex; 
     font-family: Helvetica;
-    color:#000000;
+    color: #333;
     font-size: 0.9rem;
     font-weight:bold;
 }
@@ -748,7 +748,7 @@ footer{
 }
 
 .work-experience-text span {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
  .experience1-text{
     top: 8%;
