@@ -19,7 +19,7 @@ function getCurrentSection() {
     let currentSection = null;
     sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <=50 && rect.bottom >= 50) {
+        if (rect.top <=100 && rect.bottom >= 100) {
             currentSection = section;
         }
     });
