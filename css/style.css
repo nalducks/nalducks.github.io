@@ -992,7 +992,7 @@ figcaption {
 /*- - - - - EXPERIENCE - - - - - */
 
 .experience {
-    width: 90%;
+    width: 80%;
     margin-left: 6%;
     padding-left: 0;
 }
@@ -1017,7 +1017,7 @@ figcaption {
  .experience2-text {
     left: 10%;
     top: 50%;
-    width: 75vw;
+    width: 80vw;
 }
  .experience3-text {
     left: 10%;
