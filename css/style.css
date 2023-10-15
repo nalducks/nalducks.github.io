@@ -492,7 +492,7 @@ figcaption {
     width: 50vw;
 }
 
-.experience1-text p,
+.experienceBox p,
 .experience2-text p, 
 .experience3-text p{
     line-height: 0.8rem;
@@ -502,7 +502,7 @@ figcaption {
 
 }
 
-.experience1-text p:nth-child(1), 
+.experienceBox p:nth-child(1), 
 .experience2-text p:nth-child(1), 
 .experience3-text p:nth-child(1){
     font-family: Helvetica;
@@ -511,7 +511,7 @@ figcaption {
     font-size: 2rem;
 }
  
-.experience1-text p:nth-child(2), 
+.experienceBox p:nth-child(2), 
 .experience2-text p:nth-child(2), 
 .experience3-text p:nth-child(2){
     font-family: calibri;
@@ -520,7 +520,7 @@ figcaption {
     margin: 0;
 }
  
-.experience1-text p:nth-child(3),
+.experienceBox p:nth-child(3),
 .experience2-text p:nth-child(3),
 .experience3-text p:nth-child(3){
     font-family: calibri;
