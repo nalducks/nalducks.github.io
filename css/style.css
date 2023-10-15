@@ -907,8 +907,8 @@ margin-left: 21%;
     justify-content: center;
 }
 .social-icons a {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     margin: 3%;
 }
  
@@ -1012,17 +1012,17 @@ figcaption {
  .experience1-text {
     left: 10%;
     top: 12%;
-    width: 80%;
+    width: 23vw;
 }
  .experience2-text {
     left: 10%;
     top: 50%;
-    width: 80%;
+    width: 35vw;
 }
  .experience3-text {
     left: 10%;
     top: 76%;
-    width: 80%;
+    width: 35vw;
 }
 
 .experience1-text p,
