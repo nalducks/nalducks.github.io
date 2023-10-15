@@ -1033,7 +1033,7 @@ figcaption {
 .experience2-text p, 
 .experience3-text p {
     line-height: 10px;
-    margin: 2%;
+    margin: 0;
     margin-top: 1%;
     margin-left: 0;
 }
@@ -1048,7 +1048,7 @@ figcaption {
 .experience2-text p:nth-child(2), 
 .experience3-text p:nth-child(2) {
     font-size: 17px;
-    padding-top: 1%;
+    padding-top: 2.5%;
 }
  
 .experience1-text p:nth-child(3),
