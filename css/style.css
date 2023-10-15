@@ -255,8 +255,8 @@ main{
 }
 
 .button:hover span:after {
-  opacity: 1;
-  right: 0;
+   opacity: 1;
+   right: 0;
 }
 
 .social-icons{
