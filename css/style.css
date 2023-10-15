@@ -1012,16 +1012,19 @@ figcaption {
  .experience1-text {
     left: 10%;
     top: 12%;
+    margin-top: 1%
     width: 80vw;
 }
  .experience2-text {
     left: 10%;
     top: 50%;
+    margin-top: 1%
     width: 80vw;
 }
  .experience3-text {
     left: 10%;
     top: 76%;
+    margin-top: 1%
     width: 80vw;
 }
 
