@@ -1048,13 +1048,14 @@ figcaption {
 .experience2-text p:nth-child(2), 
 .experience3-text p:nth-child(2) {
     font-size: 18px;
+    padding-top: 1%;
 }
  
 .experience1-text p:nth-child(3),
 .experience2-text p:nth-child(3),
 .experience3-text p:nth-child(3) {
     font-size: 14px;
-     line-height: 1;
+    line-height: 1;
 }
  
 .image-education,
