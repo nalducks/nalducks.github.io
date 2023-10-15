@@ -998,6 +998,7 @@ figcaption {
 }
 .experience li {
      font-size: 0.8rem;
+     width: 75vw;
 }
 .work-experience-text {
     display: flex;
@@ -1011,20 +1012,20 @@ figcaption {
 }
  .experience1-text {
     left: 10%;
-    top: 12%;
-    margin-bottom: 30rem;
+    top: 0;
+    margin-top: 5rem;
     width: 80vw;
 }
  .experience2-text {
     left: 10%;
-    top: 50%;
-    margin-top: 1%;
+    top: 0;
+    margin-top: 20rem;
     width: 80vw;
 }
  .experience3-text {
     left: 10%;
-    top: 76%;
-    margin-top: 1%;
+    top: 0;
+    margin-top: 31rem;
     width: 80vw;
 }
 
