@@ -719,7 +719,78 @@ footer{
 }
 
 /*- - - - - EXPERIENCE - - - - - */
+.experienceText {
+    display: inline;
+    position: absolute;
+    left: 42%;
+    top: 15%;
+    line-height: 2.3rem;
+}
 
+.experienceText span {
+    font-family: mono type;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.containerBox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 13%;
+    left: 48%;
+}
+
+.experienceBox {
+      width: 40vw;
+      margin: 0.8rem;
+}
+.experienceBox p {
+    line-height: 0.8rem;
+    margin: 0.5rem;
+    margin-top:0.5rem;
+    margin-left:0;
+}
+.experienceBox ul {
+    margin: 0;
+}
+.experienceBox li{
+     line-height: 1;
+    font-family: calibri;
+    color: #403e3e;
+    font-size: 1rem;
+}
+
+.experienceBox p:nth-child(1) {
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 2rem;
+}
+ 
+.experienceBox p:nth-child(2) {
+    font-family: calibri;
+    color: #1a1a1a;
+    font-size: 1.5rem;
+    margin:0;
+    padding-top: 0.4rem;
+}
+ 
+.experienceBox p:nth-child(3) {
+    font-family: calibri;
+    color: #403e3e;
+    font-size: 1rem;
+}
+
+
+
+    
 .experience {
     width: 75%;
 }
@@ -970,74 +1041,51 @@ figcaption {
     font-size: 1rem;
 }
 /*- - - - - EXPERIENCE - - - - - */
-
-.experience {
-    width: 80%;
-    margin-left: 6%;
-    padding-left: 0;
-}
-.experience li {
-     font-size: 0.8rem;
-     width: 75vw;
-}
-.work-experience-text {
+    
+.experienceText {
     display: flex;
     justify-content: center;
     width: 80%;
     left: 10%;
     top: 5%;
 }
-.work-experience-text span {
+
+.experienceText span {
     font-size: 25px;
 }
- .experience1-text {
+.containerBox {
     left: 10%;
     top: 0;
     margin-top: 5rem;
     width: 80vw;
 }
- .experience2-text {
-    left: 10%;
-    top: 0;
-    margin-top: 21rem;
-    width: 80vw;
+.experienceBox {
+      width: 40vw;
+      margin: 0.8rem;
 }
- .experience3-text {
-    left: 10%;
-    top: 0;
-    margin-top: 31rem;
-    width: 80vw;
-}
-
-.experience1-text p,
-.experience2-text p, 
-.experience3-text p {
+.experienceBox p {
     line-height: 10px;
     margin: 0;
     margin-top: 1%;
     margin-left: 0;
 }
-
-.experience1-text p:nth-child(1), 
-.experience2-text p:nth-child(1), 
-.experience3-text p:nth-child(1) {
+.experienceBox ul {
+    margin: 0;
+}
+.experienceBox li{
+    font-size: 0.8rem;
+}
+.experienceBox p:nth-child(1) {
     font-size: 20px;
 }
- 
-.experience1-text p:nth-child(2), 
-.experience2-text p:nth-child(2), 
-.experience3-text p:nth-child(2) {
+.experienceBox p:nth-child(2) {
     font-size: 17px;
     padding-top: 2.5%;
 }
- 
-.experience1-text p:nth-child(3),
-.experience2-text p:nth-child(3),
-.experience3-text p:nth-child(3) {
+.experienceBox p:nth-child(3) {
     font-size: 14px;
     line-height: 1;
 }
- 
 .image-education,
 .image-experience {
     display: none;
