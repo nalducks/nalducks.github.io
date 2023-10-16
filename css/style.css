@@ -1055,11 +1055,10 @@ figcaption {
 }
 .containerBox {
     left: 10%;
-    top: 0;
-    margin-top: 5rem;
+    top: 12%;
 }
 .experienceBox {
-      width: 80%;
+      width: 87%;
       margin: 1%;
 }
 .experienceBox p {
