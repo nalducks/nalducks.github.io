@@ -1057,10 +1057,9 @@ figcaption {
     left: 10%;
     top: 0;
     margin-top: 5rem;
-    width: 80vw;
 }
 .experienceBox {
-      width: 40vw;
+      width: 80%;
       margin: 0.8rem;
 }
 .experienceBox p {
