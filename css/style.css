@@ -1059,7 +1059,8 @@ figcaption {
 }
 .experienceBox {
       width: 87%;
-      margin: 1%;
+      margin: 3%;
+      margin-left: 0;
 }
 .experienceBox p {
     line-height: 10px;
