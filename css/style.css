@@ -166,7 +166,7 @@ main{
 @keyframes moveUpDown {
     0%, 100% {
         transform: translateY(2px);
-        color: #999;
+        color: #88bcfc;
     }
     50% {
         transform: translateY(0);
