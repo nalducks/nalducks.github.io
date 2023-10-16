@@ -1060,7 +1060,7 @@ figcaption {
 }
 .experienceBox {
       width: 80%;
-      margin: 0.8rem;
+      margin: 1%;
 }
 .experienceBox p {
     line-height: 10px;
@@ -1079,7 +1079,7 @@ figcaption {
 }
 .experienceBox p:nth-child(2) {
     font-size: 17px;
-    padding-top: 2.5%;
+    padding-top: 3%;
 }
 .experienceBox p:nth-child(3) {
     font-size: 14px;
