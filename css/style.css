@@ -464,6 +464,7 @@ figcaption {
     flex-direction: column;
 }
 .yearsBox {
+    left: 10%;
     width: 4rem;
     height: 4rem;
     margin: 4rem;
