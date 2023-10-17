@@ -454,6 +454,48 @@ figcaption {
     font-size: 3rem;
 }
 
+.positionBox {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.yearsBox {
+    width: 4rem;
+    height: 4rem;
+    margin: 4rem;
+    display: flex;
+    color: #222;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    background-color: #999;
+
+}
+.yearsBox:hover {
+    color: #fff;
+    background-color: #555;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+
+.yearsBox::after {
+    content: '';
+    position: absolute;
+    left: 50%; 
+    top: 4rem;
+    width: 0.4rem; 
+    height: 12rem; 
+    background-color: #999; 
+    transform: translateX(-50%); 
+}
+
+.yearsBox:last-child::after {
+    content: none;
+}
+
+
+
 .containerBox {
     display: flex;
     flex-direction: column;
