@@ -434,6 +434,10 @@ figcaption {
 
 /*- - - - - EXPERIENCE - - - - - */
 
+.sectionn{
+    width: 100%;
+    height: 150vh;
+}
 .experienceText {
     display: inline;
     position: absolute;
