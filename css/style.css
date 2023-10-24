@@ -8,27 +8,39 @@ main{
     padding: 0;
 }
 
-.section{
-    background-color: #edf2fb;
-    position: relative;
-    width: 100%;
-    height: 100vh;
+section{
+      position: relative;
+      width: 100%;
+      height: 100vh;
+     background-color: #151515;
+ }
+.bgSatu {
+      background-image: url('home.jfif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: relative;
+      width: 100%;
+      height: 100vh;
 }
 
-.navbar{
-   background-color: #edf2fb;
+
+
+.navbar {
+    background-color: #edf2fb;
    position: fixed;
    display: flex;
    width: 100vw;
    height: 1.5vh;
    margin: 0;
-   opacity: 95%;
+   opacity: 90%;
    align-items: center;
    padding: 1rem;
-   z-index: 1;
    justify-content: space-between;
    border: 1.5px solid #e2e2e2;
-   transform: translateY(-100%);
+  z-index: 1;
+  top: -100%;
+  transition: top 0.8s;
 }
 
 .menu {
@@ -114,34 +126,6 @@ main{
     padding-left: 9rem;
 }
 
-@keyframes fadeInA {
-    0% {
-        opacity: 0;
-        transform: translate(-27%, -42%);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(-13%, -42%);
-    }}
-@keyframes fadeInB {
-    0% {
-        opacity: 0;
-        transform: translate(-120%, -42%);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(-13%, -42%);
-    }}
-
-@keyframes fadeInC {
-    0% {
-        opacity: 0;
-        transform: translateX(20%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }}
 
 @keyframes fadeInDropdown { 
     from {
@@ -163,75 +147,141 @@ main{
         transform: translateY(-100%);
     }}
 
-@keyframes moveUpDown {
-    0%, 100% {
-        transform: translateY(2px);
-        color: #88bcfc;
-    }
-    50% {
-        transform: translateY(0);
-        color: #1780db;
-    }
+
+/*- - - - - Home - - - - - */
+.container {
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
 }
-
-/*- - - - - ABOUT - - - - - */
-
-.about-text{
-    background-color: #edf2fb;
+.containerBox {
     position: absolute;
-    left: 23%;
-    top: 44%;
-    animation: fadeInA 2s forwards;
+    top: 30%;
+    width: 50%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    top: 37%;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #ddd;
+    position: absolute;
+    animation: lineDisappear 1s linear forwards;
+}
+.text {
+    opacity: 0;
+    position: absolute;
+}
+.up {
+    font-family: calibri;
+    font-weight: bold;
+    color: #ddd;
+    font-size: 2rem;
+    top: 20px;
+    animation: fadeInA 0.5s linear forwards 0.5s ;
+}
+.down {
+    font-family: calibri;
+    font-weight: bold;
+    color: #ddd;
+    font-size: 3rem;
+    top: 60px;
+    animation: fadeInB 0.5s linear forwards 0.5s;
+}
+.taxt {
+    font-family: myriad pro regular;
+    color: #eee;
+    font-size: 1.8rem;
+    line-height: 1;
+    margin-top: 15%;
 }
 
-.about-text p{
-    width: 35vw;
-    line-height: 0;
-    margin: 3rem 0rem 1rem;
+
+@keyframes lineDisappear {
+    0%, 100% {
+        left: 50%;
+        width: 0;
+    }
+    30%, 70% {
+        left: 0;
+        width: 100%;
+    }}
+
+@keyframes fadeInA { 
+    from {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }}
+@keyframes fadeInB { 
+    from {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }}
+@keyframes fadeInC { 
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    30%, 50% , 70%, 100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    40%, 60%, 80% {
+        opacity: 1;
+        transform: translateY(-50%);
+    }}
+@keyframes animasi-ikon {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }}
+
+.hidden {
+  display: none;
 }
-.about-text p:nth-child(1){
-    font-family: calibri;
-    font-weight: bold;
-    color: #6d6d6d;
-    font-size: 2rem;
-}
- 
-.about-text p:nth-child(2){
-    font-family: calibri;
-    font-weight: bold;
-    color: #1c1c1c;
-    font-size: 5rem;
-}
- 
-.about-text p:nth-child(3){
-    font-family: myriad pro regular;
-    color: #403e3e;
-    font-size: 2.2rem;
-    line-height: 1;
-    animation: moveUpDown 2s infinite;
-}
- 
-.about-text p:nth-child(4),
-.about-text p:nth-child(5){
-    font-family: calibri;
-    color: #403e3e;
-    font-size: 1rem;
-    margin: 0;
-    line-height: 1.2rem;
+
+.buttonBox {
+    display: flex;
+    position: absolute;
+    bottom: 25%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInC 0.8s linear forwards;
 }
 
 .button {
   border-radius: 0.8rem;
-  background-color: #1980db;
+  background-color: #b48500;
   border: none;
-  color: #FFFFFF;
+  color: #d0d0d0;
   text-align: center;
   font-size: 1rem;
   padding: 0.8rem;
-  width: 32%;
+  width: 100%;
   transition: all 0.3s;
   cursor: pointer;
-  margin-top: 1rem;
 }
 
 .button span {
@@ -259,26 +309,26 @@ main{
    right: 0;
 }
 
-.social-icons{
-    display: left;
-    background-color: #edf2fb;
+.social-icons {
+    display: flex;
     position: absolute;
-    left: 10%;
-    top: 46%;
-    animation: fadeInB 2s forwards;
+    bottom: 10%;
+    width: 100%;
+    justify-content: center;
 }
 
 .social-icons a{
     text-decoration: none;
     color: #000000;
-    width: 100%;
+    width: 6vh;
     height: 6vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e2e2e2;
+    background-color: #d0d0d0;
     margin: 1rem;
     border-radius:50%;
+   animation: animasi-ikon 0.8s;
 }
  
 .social-icons i,.social i{
@@ -287,7 +337,7 @@ main{
  
 .social-icons a:hover{
     color:#ffffff;
-    background-color: #1980db;
+    background-color: #b48500;
     box-shadow:2px 2px 12px rgba(0,0,0,0.2);
     transition:all ease 0.3s;
 }
@@ -298,69 +348,62 @@ main{
     transition:all ease 0.3s;
 }
 
-.image-about {
-    background-color:#edf2fb;
-    height: auto;
-    width: 33%;
-    position: absolute;
-    top: 15%;
-    right: 10%;
-    animation: fadeInC 2s forwards;
-}
-
 /*- - - - - EDUCATION - - - - - */
 
-.education-text{
+.aboutBox {
     background-color: #edf2fb;
     position: absolute;
-    left: 55%;
-    top: 20%;
+    right: 12%;
+    top: 25%;
 }
 
-.education-text p{
+.aboutBox  p{
     width: 40vw;
-    margin: 5rem 0rem 5rem;
+   background-color: #e2e2e2;
 }
 
-.education-text p:nth-child(1){
-    font-family: Helvetica;
-    font-weight: bold;
-    color: #1a1a1a;
-    font-size: 4rem;
-    margin:0;
-    margin-bottom: 6rem;
-}
- 
-.education-text p:nth-child(2){
+.aboutBox p:nth-child(1){
     font-family: calibri;
     font-weight: bold;
-    letter-spacing: 0;
     color: #1a1a1a;
     font-size: 3rem;
-    margin:0;
+    margin: 0 0 2rem 0;
 }
  
-.education-text p:nth-child(3){
+.aboutBox p:nth-child(2),
+.aboutBox p:nth-child(3),
+.aboutBox p:nth-child(4),
+.aboutBox p:nth-child(5) {
     font-family: calibri;
     color: #403e3e;
-    font-size: 1.5rem;
-    margin:0;
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0 0;
 }
  
-.education-text p:nth-child(4){
-    font-family: calibri;
-    color: #403e3e;
-    font-size: 1rem;
-    margin:0;
-}
-
-.image-education{
-    background-color:#edf2fb;
-    height: 70vh;
+.aboutImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    bottom: 8rem;
-    left: 10%;
-
+    bottom: 50%;
+    width: 50vw;
+    background-color: #e2e2e2;
+}
+.aboutImg img{
+    height: 60vh;
+    position: absolute;
+}   
+.aboutImg a{
+   background-color: #e2e2e2;
+    justify-content: center;
+    text-align: center; 
+   position: absolute;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #555;
+    font-size: 3rem;
+    margin-top: 35rem;
+    padding:  0 5rem 0 5rem;
 }
 
 
