@@ -1,7 +1,7 @@
 // script.js
 const navbar = document.querySelector(".navbar");
 const menuItems = navbar.querySelectorAll(".menu a");
-const sections = document.querySelectorAll(".section");
+const sections = document.querySelectorAll("section");
 let isNavbarHidden = false;
 let timeoutId;
 
