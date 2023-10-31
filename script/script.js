@@ -10,7 +10,7 @@ function typeText() {
         setTimeout(typeText, 100); // Mengatur delay antar karakter (dalam milidetik)
     } else if (index === textToType.length && !isDeleting) {
         isDeleting = true;
-        setTimeout(typeText, 2000); // Menunda sebelum penghapusan karakter dimulai
+        setTimeout(typeText, 3000); // Menunda sebelum penghapusan karakter dimulai
     } else if (index > 0 && isDeleting) {
         textElement.innerHTML = textToType.substring(0, index - 1);
         index--;
@@ -28,20 +28,20 @@ window.onload = function() {
 
 
 const navbar = document.getElementById("navbar");
-const section2 = document.getElementById("about");
+const section2 = document.getElementById("section2");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY >= section2.offsetTop) {
     navbar.style.top = "0";
   } else {
-    navbar.style.top = "-100px"; // Atur tinggi negatif agar navbar menghilang
+    navbar.style.top = "-100%"; // Atur tinggi negatif agar navbar menghilang
   }
 });
 
 // Sembunyikan navbar saat pertama kali dimuat jika sudah di section pertama
 window.addEventListener("load", () => {
   if (window.scrollY < section2.offsetTop) {
-    navbar.style.top = "-100px";
+    navbar.style.top = "-100%";
   }
 });
 
@@ -62,27 +62,68 @@ window.addEventListener("load", () => {
       });
     }
     setTimeout(munculkanElemen1, 6000);
-    setTimeout(munculkanElemen2, 7000);
+    setTimeout(munculkanElemen2, 7100);
 
 document.addEventListener("DOMContentLoaded", function() {
-    var menuItems = document.querySelectorAll(".menu a");
+    var menuLinks = document.querySelectorAll(".menu a");
     var sections = document.querySelectorAll("section");
-    var scrollOffsets = [];
+    var scrollThreshold = 200; // Atur ambang batas pengguliran di sini (misalnya, 100 pixel)
 
-    sections.forEach(function(section) {
-        scrollOffsets.push(section.offsetTop);
-    });
+    function activateMenu(index) {
+        menuLinks.forEach(function(item) {
+            item.classList.remove("active");
+        });
+        menuLinks[index].classList.add("active");
+    }
 
-    window.addEventListener("scroll", function() {
+    function updateActiveSection() {
         var scrollPosition = window.scrollY;
 
-        for (var i = 0; i < scrollOffsets.length; i++) {
-            if (scrollPosition >= scrollOffsets[i] && (i === scrollOffsets.length - 1 || scrollPosition < scrollOffsets[i + 1])) {
-                menuItems.forEach(function(item) {
-                    item.classList.remove("active");
-                });
-                menuItems[i].classList.add("active");
+        sections.forEach(function(section, index) {
+            var topOffset = section.offsetTop;
+            var bottomOffset = topOffset + section.offsetHeight;
+
+            if (scrollPosition >= topOffset - scrollThreshold && scrollPosition < bottomOffset - scrollThreshold) {
+                activateMenu(index);
             }
-        }
+        });
+    }
+
+    window.addEventListener("scroll", updateActiveSection);
+    updateActiveSection(); // Aktifkan menu saat halaman dimuat
+
+    menuLinks.forEach(function(menuLink, index) {
+        menuLink.addEventListener("click", function(e) {
+            e.preventDefault();
+            sections[index].scrollIntoView({ behavior: "smooth" });
+        });
     });
 });
+
+
+// Fungsi untuk slider img
+let currentIndex = 0;
+const imageContainers = document.querySelectorAll('.imageCertificate');
+
+function slide(direction) {
+  imageContainers[currentIndex].classList.remove('visible');
+  
+  if (direction === 'left') {
+    currentIndex = (currentIndex - 1 + imageContainers.length) % imageContainers.length;
+  } else if (direction === 'right') {
+    currentIndex = (currentIndex + 1) % imageContainers.length;
+  }
+  imageContainers[currentIndex].classList.add('visible');
+}
+
+
+function showDropdown() {
+    var dropdown = document.getElementById("dropdown");
+    dropdown.classList.add("show");
+    dropdown.classList.remove("close");
+}
+
+function closeDropdown() {
+    var dropdown = document.getElementById("dropdown");
+    dropdown.classList.add("close");
+}
