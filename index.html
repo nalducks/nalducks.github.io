@@ -8,28 +8,27 @@
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>   
     <title>My Portfolio</title>
 </head>
-<main>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a class="logo" href="#">DHANY CATUR PRASETYA</a>
             <ul class="menu">
-                <li><a href="#about" class="active">About</a></li>
-                <li><a href="#education" >Education</a></li>
-                <li><a href="#skill" >Skills</a></li>
-                <li><a href="#experience" >Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Skills</a></li>
+                <li><a href="#section4">Experience</a></li>
+                <li><a href="#section5">Certifications</a></li>
             </ul>
       <a class="btn menu-button" onclick="showDropdown()">&#9776;</a>
             <ul class="menuDropdown" onclick="closeDropdown()" id="dropdown">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skill">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Skills</a></li>
+                <li><a href="#section4">Experience</a></li>
+                <li><a href="#section5">Certifications</a></li>
             </ul>
         </nav>
 <!--HOME-->
 <body>   
-<section class="bgSatu" id="home">
+<section class="bgSatu" id="section1">
     <div class="container">
     <div class="containerBox">
         <div class="line"></div>
@@ -38,7 +37,6 @@
         <div class="taxt"><p id="text"></p></div>
     </div>
 </div>
-
 <div class="elemen1 hidden">
       <a class=" icon satu" href="mycv/index.html" target="_blank"><button class="button"><span>Curiculum Vitae</span></button></a>
 </div>
@@ -50,22 +48,21 @@
             <a href="https://instagram.com/dhannynal_" target="_blank"><i class="fa fa-instagram"></i></a>
         </div>
   </section>
-
 <!--ABOUT-->
-<section class="section" id="about">
+<section class="section1" id="section2">
 <div class="aboutBox">
             <p>Hey, I'm Dhany.</p>
 	<p>&emsp;Saya lulusan dari Sekolah Menengah Kejuruan Teknik Elektronika pada tahun 2021, saya memiliki dasar yang kuat di bidang elektronik dan teknologi. Saya tertarik untuk mengejar karir di bidang sumber daya manusia.</p>
-	<p>&emsp;Selain itu saya juga suka bahasa pemrograman seperti c++, python, java script, dan juga tentang html dan css , saya ingin memulai karrir saya di bidang programming, Pengalaman saya di bidang pemrograman meliputi pembuatan website portfolio saya sendiri, membuat program lampu merah, smart home, timer, calculator.</p>
+	<p>&emsp;Selain itu saya juga mendalami bahasa pemrograman seperti c++, python, java script, dan juga tentang html dan css , saya ingin memulai karrir saya di bidang programming, Pengalaman saya di bidang pemrograman meliputi pembuatan website portfolio saya sendiri, membuat program lampu merah, smart home, timer, calculator.</p>
 	<p>&emsp;Pengalaman saya di bidang elektronika meliputi melakukan perawatan dan perbaikan pada berbagai mesin, termasuk mesin las inverter, kompresor, penyedot debu, dan pembersih jet. Selain itu, saya memiliki pengalaman memecahkan masalah dan memperbaiki mesin industri, membuat rangkaian bintang-delta dan maju-mundur, dan memprogram inverter untuk mengoperasikan motor 3 fasa.</p>
 	<p>&emsp;Selain di bidang tersebut saya juga suka traveling, bermain music, atau mempelajari hal baru.</p>
         </div>
    <div class="aboutImg">
-<img alt="model" class="imageEducation" src="image/image1.jpg"><a>About Me</a>
+<img alt="model" src="image/image1.jpg"><a>About Me</a>
 </div>
   </section>
 <!--SKILL-->
-<section id="skill">
+<section class="section2" id="section3">
 <div class="skill-text">
        <p>MY SKILL</p>
 </div>
@@ -75,8 +72,6 @@
       <img src="image/skill/excel.png" alt="Image 1"><figcaption>Microsoft Excel</figcaption>
 </figure><figure>
       <img src="image/skill/word.png" alt="Image 1"><figcaption>Microsoft Word</figcaption>
-</figure><figure>
-      <img src="image/skill/email.png" alt="Image 1"><figcaption>Email</figcaption>
 </figure><figure>
       <img src="image/skill/accurate5.png" alt="Image 1"><figcaption>Accurate5</figcaption>
 </figure><figure>
@@ -120,119 +115,113 @@
 </figure>
 </div>
   </section>
-
 <!--EXPERIENCE-->
-<section class="section sectionn" id="experience">
-<div class="experienceText">
-            <span>W</span> <span>O</span> <span>R</span> <span>K</span>&nbsp; <span>E</span> <span>X</span> <span>P</span> <span>E</span> <span>R</span> <span>I</span> <span>E</span> <span>N</span> <span>C</span> <span>E</span>
- </div>
-<div class="positionBox">
-    <div class="yearsBox">2023</div>
-    <div class="yearsBox">2022</div>
-    <div class="yearsBox">2021</div>
-    <div class="yearsBox">2020</div>
-</div>
-    <div class="containerBox">
-<div class="experienceBox">
-            <p>Maintenance Technician</p>
-            <p>PT Perkakas Sumber Karya</p>
-            <p>Central Jakarta, Indonesia  ·  Jan 2023 - Saat ini  ·  9 bln</p>
-                  <ul>
-                        <li>Perform maintenance and repair on inverter welding machines, compressors, vacuum cleaners, and High Pressure Cleaner (HPC)</li>
-                        <li>Checking and replacing machine parts when it's time to be replaced or they can't be used</li>
-                        <li>Input part data part into the accurate application</li>
-                        <li>Input customer data in the accurate application</li>
-                        <li>Create invoices for each customer in the accurate application</li>
-                        <li>Calculating pettycash weekly output</li>
-                        <li>Make a journal for each incoming transaction</li>
-                        <li>Doing daily, weekly and monthly reports via email</li>
-                  </ul>
-                </div>
-<div class="experienceBox">
-            <p>Maintenance Technician</p>
-            <p>PT Semesta Gemilang Karyatama</p>
-            <p>Trenggalek, Jawa Timur, Indonesia  ·  Sep 2021 - Jan 2023  · 1 thn 5 bln</p>
-                <ul>
-                      <li>Perform maintenance, repair and troubleshooting on industrial machines</li>
-                      <li>Making star-delta, forward-reverse circuits, and installing 3 phase industrial motors</li>
-                      <li>Perform programming on the inverter for operate 3 phase motors</li>
-                      <li>Basic mechanichal - welding</li>
-                   </ul>
- </div>
-<div class="experienceBox">
-            <p>Electronics Engineering</p>
-            <p>PPPPTK BOE/VEDC Malang</p>
-            <p>Kota Malang, East Java, Indonesia  ·  Okt 2019 - Des 2019  ·  3 bln</p>
-                 <ul>
-                       <li>Make a schematic power supply adjustable 3 Ampere</li>
-                       <li>Use an ocilloscope to see the frequency at the power supply output</li>
-                       <li>Create a traffic light program using arduino uno with c/c++ language</li>
-                  </ul>            
-  </div>
-        <div class="experienceBox">
-            <p>Teknik Elektronika</p>
-            <p>Sekolah Menengah Kejuruan Tahun Kelulusan 2021, Dengan nilai rata-rata UN sebesar 87,00</p>
-            <p>Pencapaian saat di SMK :</p>
-                 <ul>
-                       <li>Juara 1 Lomba Elektronika Tingkat Wilker Jawa Timur | 2021</li>
-                       <li>Sertifikat Lomba Elektronika Tingkat Provinsi Jawa Timur | 2021</li>
-                       <li>none</li>
-                  </ul>            
-  </div>
-    </div>
+<section class="bgDua"id="section4">
+    <div class="centerBox">
+       <a>EXPERIENCE</a>
+          <div class="experienceBox right">
+             <div class="experience">
+                 <p>VOCATIONAL HIGH SCHOOL</p>
+                      <p>Department of electronics engineering, IPK : 87/100</p>
+                           <p>Achievements while in vocational school :
+                                  <br>1st Place in East Java Wilker Level Electronics Competition and East Java Provincial Level Electronics Competition Certificate in years 2021.
+		       </p> 
+                                          </div>
+            <div class="iconBox">
+    	 <span>2018 - 2021</span>
+     	     <span><i class="fa fa-graduation-cap"></i></span>
+                         </div>
+                             </div>
+        <div class="experienceBox left">
+             <div class="iconBox">
+     	  <span><i class="fa fa-university"></i></span>
+    	        <span>OCT - DEC 2019</span>
+                            </div>
+            <div class="experience">
+                   <p>INTERNSHIP PROGRAM</p>
+                        <p>PPPPTK BOE/VEDC Malang</p>
+                               <p>Helping prepare equipment for training in each section, making daily internship results reports and reports at the end of the internship, and from a technical perspective, making a power supply scheme that can be adjusted to any voltage, checking the frequency on the power supply using an oscilloscope, making a traffic light program. using Arduino uno.
+	                     </p>
+                                          </div>
+                                               </div>
+        <div class="experienceBox right">
+            <div class="experience">
+                 <p>MAINTENANCE TECHNHICIAN</p>
+                     <p>PT Semesta Gemilang Karyatama</p>
+                        <p>Help prepare maintenance schedules for industrial machines, help solve problems when production machines have problems, report any machines that need maintenance or replacement of parts, help assemble machines and their control panels, make control panels for 3-phase motor tests, carry out welding on production machines if necessary additional design to make it easier to carry out maintenance or repairs.
+                             </p>
+                                 </div>
+            <div class="iconBox">
+                  <span>2021 - 2023</span>
+     	      <span><i class="fa fa-briefcase"></i></span>
+                           </div>
+                                </div>
+        <div class="experienceBox left">
+            <div class="iconBox">
+     	 <span><i class="fa fa-wrench"></i></span>
+    	     <span>2023 - PRESENT</span>
+                         </div>
+            <div class="experience">
+                <p>TECHNHICIAN AND ADMINISTRATION</p>
+                    <p>PT Perkakas Sumber Karya</p>
+                        <p>Enter customer data and parts used, record money coming in and money going out every day, make a list of parts or stationery needs every month, carry out maintenance and repairs on inverter welding machines, compressors, vacuum cleaners and High Pressure Cleaners (HPC), analyze for every machine that is damaged or there are problems, create and send reports of outgoing or incoming parts every day.
+                             </p>
+                                 </div>
+                                      </div>
   </section>
-
-
 <!--CERTIFICATE-->
-<section class="section" class="content" id="certifications">
+<section class="content" id="section5">
 <div class="certificate-text">
                  <p>CERTIFICATE</p>
      </div> 
   <div class="imageSlide">
- <div class="imageCertificate visible">
-      <img src="image/certificate/back_end_development.jpg" alt="Image 1"><a>1</a>
+    <div class="imageCertificate visible">
+      <img src="image/certificate/python_intro.jpg" alt="Image 1"><a>1</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/tips_banting_setir_ke_dunia_it.jpg" alt="Image 2"><a>2</a>
+      <img src="image/certificate/back_end_development.jpg" alt="Image 2"><a>2</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/data_visualization.jpg" alt="Image 3"><a>3</a>
+      <img src="image/certificate/tips_banting_setir_ke_dunia_it.jpg" alt="Image 3"><a>3</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/front_end_CSS.jpg" alt="Image 4"><a>4</a>
+      <img src="image/certificate/data_visualization.jpg" alt="Image 4"><a>4</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/sql_data_analysis.jpg" alt="Image 5"><a>5</a>
+      <img src="image/certificate/front_end_CSS.jpg" alt="Image 5"><a>5</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/basic_ms_excel.jpg" alt="Image 6"><a>6</a>
+      <img src="image/certificate/sql_data_analysis.jpg" alt="Image 5"><a>6</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/creative_copywriting.jpg" alt="Image 7"><a>7</a>
+      <img src="image/certificate/basic_ms_excel.jpg" alt="Image 6"><a>7</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/graphic_design.jpg" alt="Image 8"><a>8</a>
+      <img src="image/certificate/creative_copywriting.jpg" alt="Image 7"><a>8</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/introduction_data_analysis.jpg" alt="Image 9"><a>9</a>
+      <img src="image/certificate/graphic_design.jpg" alt="Image 8"><a>9</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/product_management_fundamental.jpg" alt="Image 10"><a>10</a>
+      <img src="image/certificate/introduction_data_analysis.jpg" alt="Image 9"><a>10</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/UI_UX_fundamental.jpg" alt="Image 11"><a>11</a>
+      <img src="image/certificate/product_management_fundamental.jpg" alt="Image 10"><a>11</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/lks_prov.jpg" alt="Image 12"><a>12</a>
+      <img src="image/certificate/UI_UX_fundamental.jpg" alt="Image 11"><a>12</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/lks_wilker.jpg" alt="Image 13"><a>13</a>
+      <img src="image/certificate/lks_prov.jpg" alt="Image 12"><a>13</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/magang_malang1.jpg" alt="Image 14"><a>14</a>
+      <img src="image/certificate/lks_wilker.jpg" alt="Image 13"><a>14</a>
     </div>
     <div class="imageCertificate">
-      <img src="image/certificate/magang_malang2.jpg" alt="Image 15"><a>15</a>
+      <img src="image/certificate/magang_malang1.jpg" alt="Image 14"><a>15</a>
+    </div>
+    <div class="imageCertificate">
+      <img src="image/certificate/magang_malang2.jpg" alt="Image 15"><a>16</a>
     </div>
     <div class="slideButton">
         <a onclick="slide('left')"><i class="fa fa-arrow-left"></i></a>
@@ -240,15 +229,10 @@
     </div>
   </div>
   </section>
-
-
    <footer>        
              <p class="copyright">Copyright 2023 by Dhany. All Rights Reserved.</p>
              <a class="button-up" href="#about"><i class="fa fa-arrow-up"></i></a>
-
     </footer>
-
-<script src="script/script.js"></script>
+    <script src="script/script.js"></script>
 </body>
-<main>
 </html>
