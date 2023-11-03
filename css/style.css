@@ -373,11 +373,11 @@ section {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 50%;
+    bottom: 45%;
     width: 50vw;
 }
 .aboutImg img{
-    height: 60vh;
+    height: 80vh;
     position: absolute;
 }   
 .aboutImg a{
