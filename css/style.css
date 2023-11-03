@@ -32,14 +32,15 @@ section {
    width: 100vw;
    height: 1.5vh;
    margin: 0;
+   top: -100%;
    z-index: 1;
-   opacity: 95%;
    align-items: center;
    padding: 1rem;
+   transition: top 0.5s;
    justify-content: space-between;
    border: 1.5px solid #e2e2e2;
-   top: -100%;
-   transition: top 0.5s;
+   background: rgba(255, 255, 255, 0.5);
+   backdrop-filter: blur(1rem);
 }
 
 .menu {
