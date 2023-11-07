@@ -4,6 +4,7 @@ var index = 0;
 var isDeleting = false;
 
 function typeText() {
+   
     if (index < textToType.length && !isDeleting) {
         textElement.innerHTML += textToType.charAt(index);
         index++;
@@ -30,45 +31,46 @@ window.onload = function() {
 const navbar = document.getElementById("navbar");
 const section2 = document.getElementById("section2");
 
+
 window.addEventListener("scroll", () => {
-  if (window.scrollY >= section2.offsetTop) {
-    navbar.style.top = "0";
-  } else {
-    navbar.style.top = "-100%"; // Atur tinggi negatif agar navbar menghilang
-  }
+    if (window.scrollY >= section2.offsetTop) {
+        navbar.style.top = "0";
+    } else {
+        navbar.style.top = "-100%"; // Atur tinggi negatif agar navbar menghilang
+    }
 });
 
 // Sembunyikan navbar saat pertama kali dimuat jika sudah di section pertama
 window.addEventListener("load", () => {
-  if (window.scrollY < section2.offsetTop) {
-    navbar.style.top = "-100%";
-  }
+    if (window.scrollY < section2.offsetTop) {
+        navbar.style.top = "-100%";
+    }
 });
 
-
-    function munculkanElemen1() {
-      const elemenList = document.querySelectorAll(".elemen1");
-      elemenList.forEach(function(elemen) {
+  
+function munculkanElemen1() {
+    const elemenList = document.querySelectorAll(".elemen1");
+    elemenList.forEach(function(elemen) {
         elemen.classList.remove("hidden"); // Hapus class "sembunyi"
         elemen.classList.add("buttonBox"); // Tambah class "muncul"
-      });
-    }
-
-    function munculkanElemen2() {
-      const elemenList = document.querySelectorAll(".elemen2");
-      elemenList.forEach(function(elemen) {
+    });
+}
+  
+function munculkanElemen2() {
+    const elemenList = document.querySelectorAll(".elemen2");
+    elemenList.forEach(function(elemen) {
         elemen.classList.remove("hidden"); // Hapus class "sembunyi"
         elemen.classList.toggle("social-icons"); // Tambah class "muncul"
-      });
-    }
-    setTimeout(munculkanElemen1, 6000);
-    setTimeout(munculkanElemen2, 7100);
+    });
+}
+setTimeout(munculkanElemen1, 6000);
+setTimeout(munculkanElemen2, 7100);
 
 document.addEventListener("DOMContentLoaded", function() {
     var menuLinks = document.querySelectorAll(".menu a");
     var sections = document.querySelectorAll("section");
     var scrollThreshold = 200; // Atur ambang batas pengguliran di sini (misalnya, 100 pixel)
-
+   
     function activateMenu(index) {
         menuLinks.forEach(function(item) {
             item.classList.remove("active");
@@ -78,20 +80,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function updateActiveSection() {
         var scrollPosition = window.scrollY;
-
         sections.forEach(function(section, index) {
             var topOffset = section.offsetTop;
             var bottomOffset = topOffset + section.offsetHeight;
-
             if (scrollPosition >= topOffset - scrollThreshold && scrollPosition < bottomOffset - scrollThreshold) {
                 activateMenu(index);
             }
         });
     }
-
     window.addEventListener("scroll", updateActiveSection);
+    
     updateActiveSection(); // Aktifkan menu saat halaman dimuat
-
     menuLinks.forEach(function(menuLink, index) {
         menuLink.addEventListener("click", function(e) {
             e.preventDefault();
@@ -106,16 +105,14 @@ let currentIndex = 0;
 const imageContainers = document.querySelectorAll('.imageCertificate');
 
 function slide(direction) {
-  imageContainers[currentIndex].classList.remove('visible');
-  
-  if (direction === 'left') {
-    currentIndex = (currentIndex - 1 + imageContainers.length) % imageContainers.length;
-  } else if (direction === 'right') {
-    currentIndex = (currentIndex + 1) % imageContainers.length;
-  }
-  imageContainers[currentIndex].classList.add('visible');
+  imageContainers[currentIndex].classList.remove('visible'); 
+    if (direction === 'left') {
+        currentIndex = (currentIndex - 1 + imageContainers.length) % imageContainers.length;
+    } else if (direction === 'right') {
+        currentIndex = (currentIndex + 1) % imageContainers.length;
+    }
+    imageContainers[currentIndex].classList.add('visible');
 }
-
 
 function showDropdown() {
     var dropdown = document.getElementById("dropdown");
