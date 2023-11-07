@@ -81,17 +81,18 @@ section {
 }
 .menuDropdown { 
     display: none;
-    text-align: center;
-    padding-left: 0;
-    list-style: none;
-    position: absolute;
     left: -1px;
     top: -17px;
     width: 100vw;
     height: 110vh;
-    background-color: #f5f5f5;
+    text-align: center;
+    padding-left: 0;
     padding-top: 25%;
+    list-style: none;
+    position: absolute;
     line-height: 3rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(1rem);
 }
 .menuDropdown a {
     display: blok;
